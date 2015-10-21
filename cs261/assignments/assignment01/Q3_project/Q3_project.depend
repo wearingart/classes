@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1444431506 source:/home/wearingart/Documents/OSU/CS261/Assignments/Assignment01/Q3.c
+	<stdio.h>
+	<stdlib.h>
+

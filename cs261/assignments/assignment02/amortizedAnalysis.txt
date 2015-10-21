@@ -1,0 +1,52 @@
+Brian Wilkins
+CS261-400 Fall 2015
+10/18/2015
+Assignment 2 - Part 2 - Amortized Analysis
+
+
+1.A) What is the cost analysis of 32 consecutive push operations on an empty array starting at 8 capacity, array doubles each time it's full capacity when another unit is added?
+
+fill array = 8
+double array = 8
+fill second time = 16
+double array = 16
+add final items = 8
+
+8 + 8 + 16 + 16 + 8 = 56
+
+1.B)  As N (ie. the number of pushes) grows large, under this strategy for resizing, what
+is the big-oh complexity for a push?
+
+O(1)+
+
+
+2. A) How many cost units are spent in the entire process of performing 32 consecutive
+push operations on an empty array which starts out at capacity 8, assuming that the array will grow by a constant 2 spaces each time a new item is added to an already 
+full dynamic array? 
+
+array items cost = 32
+cost after filling array = 8 + 10 + 12 + 14 + 16 + 18 + 20 + 22 + 24 + 26 + 28 + 30
+
+Total cost = 32 + 228 = 260
+
+
+2. B)As N (ie. the number of pushes) grows large, under this strategy for resizing, 
+what is the big-oh complexity for a push?
+
+O(N)
+
+
+3.A)  Suppose that a dynamic array stack doubles its capacity when it is full, and 
+shrinks (on Pop only) its capacity by half when the array is half full or less. Can 
+you devise a sequence of N push() and pop() operations which will result in poor
+performance (O(N^2) total cost)? 
+
+Use push to push() items onto the stack until full and doubles capacity, then pop() half of the items causing the array to shrink by half.
+
+
+3.B) How might you adjust the array's shrinking policy to avoid this? (Hint: You may 
+assume that the initial capacity of the array is N/2.)
+
+You need to shrink the size of the array when capacity reaches 1/4 of capacity.
+
+

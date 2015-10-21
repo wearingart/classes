@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1445116862 source:/home/wearingart/Documents/OSU/CS261/Assignments/Assignment02/dynamicArray.c
+	<assert.h>
+	<stdlib.h>
+	"dynArray.h"
+
+1341287358 /home/wearingart/Documents/OSU/CS261/Assignments/Assignment02/dynArray.h
+
+1341287366 source:/home/wearingart/Documents/OSU/CS261/Assignments/Assignment02/stackapp.c
+	<stdio.h>
+	<stdlib.h>
+	"dynArray.h"
+
+1445115008 source:/home/wearingart/Documents/OSU/CS261/Assignments/Assignment02/testDynArray.c
+	<stdio.h>
+	<stdlib.h>
+	"dynArray.h"
+
